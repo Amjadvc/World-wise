@@ -2,11 +2,13 @@ import styles from "./CountryList.module.css";
 import Spinner from "../Spinner/Spinner";
 import CountryItem from "../CountryItem/CountryItem";
 import Message from "../Message/Message";
+import { useCities } from "../../context/CitiesContext";
 
-function CountryList({ cities, isLoading }) {
+function CountryList() {
+  const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;
   if (!cities.length)
-    return <Message message="Add your first city by a city on the map" />;
+    return <Message message="Add your first city by clicking  on the map" />;
 
   const countries = cities.reduce((arr, city) => {
     if (!arr.map((ele) => ele.country).includes(city.country))
