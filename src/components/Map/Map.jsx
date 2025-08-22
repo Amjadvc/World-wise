@@ -1,5 +1,5 @@
 import styles from "./Map.module.css";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import {
   MapContainer,
@@ -11,20 +11,21 @@ import {
 } from "react-leaflet";
 import { useCities } from "../../context/CitiesContext";
 import { useGeoLocation } from "../../hooks/useGeoLocation";
+import { useUrlPosition } from "../../hooks/useUrlPosition";
 import Button from "../Button/Button";
+import Flag from "../Flag/Flag";
 
 function Map() {
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
-  const [searchParams] = useSearchParams();
+  //
   const {
     isLoading: isLoadingPosition,
     position: geoLocationPosition,
     getPosition,
   } = useGeoLocation();
 
-  const mapLat = searchParams.get("lat");
-  const mapLng = searchParams.get("lng");
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(
     function () {
@@ -65,7 +66,8 @@ function Map() {
             key={city.id}
           >
             <Popup>
-              <span>{city.emoji}</span>
+              <Flag emoji={city.emoji} type="marked" />
+              {/* <span>{city.emoji}</span> */}
               <span>{city.cityName}</span>
             </Popup>
           </Marker>

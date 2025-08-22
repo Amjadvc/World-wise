@@ -1,0 +1,26 @@
+.flag {
+  position: absolute;
+  right: 1rem;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25px;
+}
+
+.flag.cityItm {
+  position: relative;
+  right: 0;
+  top: 0;
+  min-width: 25px;
+}
+.flag.marked {
+  position: relative;
+  right: 0;
+  top: 0;
+  min-width: 20px;
+}
+
+.flag img {
+  width: 100%;
+}

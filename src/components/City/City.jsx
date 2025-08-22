@@ -4,6 +4,7 @@ import { useCities } from "../../context/CitiesContext";
 import styles from "./City.module.css";
 import Spinner from "../Spinner/Spinner";
 import BackButton from "../Button/BackButton";
+import Flag from "../Flag/Flag";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -33,7 +34,9 @@ function City() {
       <div className={styles.row}>
         <h6>City name</h6>
         <h3>
-          <span>{emoji}</span> {cityName}
+          {/* <span>{emoji}</span> {cityName} */}
+          <Flag emoji={emoji} type="marked" />
+          {cityName}
         </h3>
       </div>
 
