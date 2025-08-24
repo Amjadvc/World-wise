@@ -1,15 +1,27 @@
 {
   "cities": [
     {
-      "id": "d140",
-      "cityName": "Al Qurayya",
-      "country": "Syrian Arab Republic (the)",
-      "emoji": "SY",
-      "notes": "test",
-      "date": "2025-08-24T13:21:35.642Z",
+      "id": "ba2a",
+      "cityName": "Villadiego",
+      "country": "Spain",
+      "emoji": "ES",
+      "notes": "",
+      "date": "2025-08-24T16:41:43.375Z",
       "position": {
-        "lat": "32.5378337766474",
-        "lng": "36.60426129047921"
+        "lat": "42.58658011939305",
+        "lng": "-4.044453479514954"
+      }
+    },
+    {
+      "id": "b213",
+      "cityName": "Ain Zohra",
+      "country": "Morocco",
+      "emoji": "MA",
+      "notes": "",
+      "date": "2025-08-24T16:41:46.705Z",
+      "position": {
+        "lat": "34.00037951420717",
+        "lng": "-6.351722125013426"
       }
     }
   ]
