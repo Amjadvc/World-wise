@@ -1,39 +1,15 @@
 {
   "cities": [
     {
-      "id": "b267",
-      "cityName": "Pitlochry",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "emoji": "GB",
-      "notes": "",
-      "date": "2025-08-24T12:55:10.215Z",
+      "id": "d140",
+      "cityName": "Al Qurayya",
+      "country": "Syrian Arab Republic (the)",
+      "emoji": "SY",
+      "notes": "test",
+      "date": "2025-08-24T13:21:35.642Z",
       "position": {
-        "lat": "56.84943781586626",
-        "lng": "-4.064941406250001"
-      }
-    },
-    {
-      "id": "e4af",
-      "cityName": "Strathpeffer",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "emoji": "GB",
-      "notes": "",
-      "date": "2025-08-24T12:56:45.883Z",
-      "position": {
-        "lat": "57.845618460921266",
-        "lng": "-5.361328125"
-      }
-    },
-    {
-      "id": "4ec1",
-      "cityName": "Isle of Man Fire and Rescue Service",
-      "country": "Isle of Man",
-      "emoji": "IM",
-      "notes": "sad",
-      "date": "2025-08-24T12:56:55.901Z",
-      "position": {
-        "lat": "54.06323020479123",
-        "lng": "-4.570312500000001"
+        "lat": "32.5378337766474",
+        "lng": "36.60426129047921"
       }
     }
   ]

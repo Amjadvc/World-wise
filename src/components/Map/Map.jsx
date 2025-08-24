@@ -16,6 +16,8 @@ import Button from "../Button/Button";
 import Flag from "../Flag/Flag";
 
 function Map() {
+  const navigate = useNavigate();
+
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
   //
@@ -38,6 +40,11 @@ function Map() {
     function () {
       if (geoLocationPosition) {
         setMapPosition([geoLocationPosition.lat, geoLocationPosition.lng]);
+
+        //navigate to a form when user get her position
+        navigate(
+          `form?lat=${geoLocationPosition.lat}&lng=${geoLocationPosition.lng}`
+        );
       }
     },
     [geoLocationPosition]
